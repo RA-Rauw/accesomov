@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+
+/* Ocultar logo Mapbox para presentación */
+.mapboxgl-ctrl-bottom-right,
+.mapboxgl-ctrl-bottom-left { display: none !important; }
+
+/* Scrollbar delgado para el sidebar */
+.sidebar-scroll::-webkit-scrollbar { width: 4px; }
+.sidebar-scroll::-webkit-scrollbar-track { background: transparent; }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: #374151; border-radius: 2px; }
